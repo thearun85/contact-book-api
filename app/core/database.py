@@ -62,7 +62,8 @@ def get_db() -> Generator[DBSession, None, None]:
     db = SessionLocal()
     try:
         yield db
-        db.commit()
+        if db.in_transaction():
+            db.commit()
     except Exception:
         db.rollback()
         raise
