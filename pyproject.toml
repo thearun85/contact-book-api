@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "contact-book-api"
-version = "0.1.0"
+version = "2.0.0"
 description = "Modern Contact Book API with clean architecture"
 authors = ["Arun Raghunath <arun@arunraghunath.io>"]
 license = "MIT"
